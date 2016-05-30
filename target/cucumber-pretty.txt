@@ -1,0 +1,8 @@
+@firstProg1
+Feature: As a User, I want to run Company Logo and History Tests
+https://uk.practicallaw.qed.thomsonreuters.com/Search/Home.html?transitionType=Default&contextData=(sc.Default)&bhcp=1&OWSessionId=b1ec277d6bf54608812f8aa320751adc&skipAnonymous=true&firstPage=true
+
+  Scenario: Verify the History Page         # testFeature.feature:10
+    Given the user logins                   # LoginTest.the_user_logins()
+    When user clicks on "History" link      # LoginTest.user_clicksOnLink(String)
+    Then user should see the "History" page # LoginTest.userShouldSeePage(String)
